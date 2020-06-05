@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,19 @@
   <title>{{title}}</title>
   <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
-<body>
 
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <form action="/" method="POST">
+      <input type="text" name="company">
+      <button type="submit" id="add-button">Add Company</button>
+    </form>
+  </nav>
   {{{body}}}
 
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <script src="/javascripts/script.js"></script>
 </body>
+
 </html>
