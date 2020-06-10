@@ -3,7 +3,7 @@ function drawCanvas() {
   fields.forEach((e) => {
     axios
       .get(
-        `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${e.id}&apikey=FSM9BH6JKAPCX2OJ`
+        `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${e.id}&apikey=UZNIINZCKL6BI8TW`
       )
       .then((responseFromAPI) => {
         printTheChart(responseFromAPI.data, e.id);

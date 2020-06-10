@@ -1,0 +1,18 @@
+<h1>{{this.user.username}}</h1>
+ <div id="to-left">
+      <form action="/userprofile" method="POST">
+        <input type="text" name="company" id="company-input" placeholder="Company ID">
+        <button type="submit" id="add-button">Add Company</button>
+      </form>
+    </div>
+
+    <section>
+  {{#each data }}
+  <div class="canvas-cont">
+    <h1>{{company}}</h1>
+    <button type="submit" class="delete"><a href="/delete/{{this._id}}">DELETE</a></button>
+    <canvas id="{{this.company}}">
+    </canvas>
+  </div>
+  {{/each}}
+</section>
